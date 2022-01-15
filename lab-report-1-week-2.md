@@ -51,6 +51,8 @@ using the scp command, directory can be copied to the remote server.
 
 **Part 6 - Optimizing Remote Running**
 
+Previous command lines can be accessed using the upper arrow key.
+
 
 
 
