@@ -10,7 +10,7 @@ Depending on your computer's operating system, download the appropriate version 
 After the installation, open up a new window of VS code. It should look something like this.
 (The color of the window might be differnet due to different setting.)
 
-![image]
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/vscode.jpg)
 
 **Part 2 - Remote Connections**
 
@@ -31,7 +31,7 @@ ssh cs15lwi22zz@ieng6.ucsd.edu
 
 If you have successfully logged in, the screen wil look like the following:
 
-![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/vscode.jpg)
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/ssh.jpg)
 
 **Part 3 - Trying Some Commands**
 cd: current directory
@@ -45,7 +45,6 @@ mkdir: make new directory
 using the scp command, directory can be copied to the remote server.
 
 **Part 5 - SSH Keys**
-![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/ssh.jpg)
 
 ![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/ssh-keygen.jpg)
 
