@@ -26,18 +26,28 @@ While waiting for the password changed to be finalized, install OpenSSH using th
 
 After installing the OpenSSH, open a new terminal inside of VS Code.
 Using the following command line, login to the remote server using the password set during the account activation.
+ssh cs15lwi22zz@ieng6.ucsd.edu
+(replace zz with your specific id characters)
 
 If you have successfully logged in, the screen wil look like the following:
 
-![image]()
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/vscode.jpg)
 
 **Part 3 - Trying Some Commands**
-
+cd: current directory
+ls: list files and directories of the current directory
+mkdir: make new directory
 
 
 **Part 4 - Moving Files with scp**
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/scp.jpg)
+
+using the scp command, directory can be copied to the remote server.
 
 **Part 5 - SSH Keys**
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/ssh.jpg)
+
+![image](https://github.com/eunkjm/cse15l-lab-reports/blob/main/ssh-keygen.jpg)
 
 **Part 6 - Optimizing Remote Running**
 
