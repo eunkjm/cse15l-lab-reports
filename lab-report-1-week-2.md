@@ -26,27 +26,56 @@ While waiting for the password changed to be finalized, install OpenSSH using th
 
 After installing the OpenSSH, open a new terminal inside of VS Code.
 Using the following command line, login to the remote server using the password set during the account activation.
-ssh cs15lwi22zz@ieng6.ucsd.edu
-(replace zz with your specific id characters)
+
+`ssh cs15lwi22zz@ieng6.ucsd.edu`
+<br />(replace zz with your specific id characters)
 
 If you have successfully logged in, the screen wil look like the following:
 
 ![image](ssh.jpg)
 
 **Part 3 - Trying Some Commands**
-cd: current directory
-ls: list files and directories of the current directory
-mkdir: make new directory
 
+![image](commandline.jpg)
+
+Using the following commands, check some features of the remote server.
+<br />`cd` : shows current directory
+<br />`ls` : list files and directories of the current directory
+<br />`mkdir` : make new directory
+<br />`exit` : log out of the remote server
 
 **Part 4 - Moving Files with scp**
-![image](scp.jpg)
 
-using the scp command, directory can be copied to the remote server.
+On the client server, create a new file named `WhereAmI.java`
+Copy the following codes into the file:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+Make sure the codes compile and execute using `javac` and `java` on the cient server.
+Then using the following command (replace zz with your username):
+
+`scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`
+
+Copy the file to the remote server. (Logging in with the password is required.)
+
+Rerun the file on the remote server, and the output should be different from the output when the file was ran on the client server.
+
+<br />![image](scp.jpg)
 
 **Part 5 - SSH Keys**
 
 ![image](ssh-keygen.jpg)
+
+Instead of typing in the password everytime you try to log in to the remote server, `ssh` keys can be used.
+A program called `ssh-keygen` generates one public key and one secret key. Copy the public key on the remote server and the private key on the client server. This allows the `ssh` command to use the generated keys instead of the password.
 
 **Part 6 - Optimizing Remote Running**
 
