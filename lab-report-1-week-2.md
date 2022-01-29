@@ -79,7 +79,16 @@ A program called `ssh-keygen` generates one public key and one secret key. Copy 
 
 **Part 6 - Optimizing Remote Running**
 
-Previous command lines can be accessed using the upper arrow key.
+Before optimizing the remote running, the total keystroke that it took to copy the local WhereAmI.java file into the remote server and running it took about 91 times.
+
+After optimizing the remote running using the upper arrow key to access the previouse command lines and the tab key to autocomplete the command line, the keystroke could come down to 31 times.
+
+![image](hello.jpg)
+
+The keystroke couldn't be optimized as best it could because the `ssh-keygen` step couldn't be established for me.
+
+![image](ssh-add.jpg)
+
 
 
 
