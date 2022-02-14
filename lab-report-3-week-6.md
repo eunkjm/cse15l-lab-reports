@@ -1,4 +1,4 @@
-#Streamlining ssh Configuration
+# Streamlining ssh Configuration
 
 ![image](configfile.jpg)
 
