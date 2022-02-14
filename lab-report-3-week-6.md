@@ -1,7 +1,3 @@
-![image](configMade.jpg)
+![image](configfile.jpg)
 
-![image](configEdit.jpg)
-
-![image](error.jpg)
-
-I currently have an issue of ssh program not working.
+![image](sshLogin.jpg)
