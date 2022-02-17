@@ -5,16 +5,17 @@
 
 ![image](indexCode.jpg)
 
-When the input text file contianed a link that misses any of the OpenBracket, ClosedBracket, OpenParentheses and ClosedParentheses, IndexOutofBound exception occurred. By implementing if statement that checks whether the four exist or not, we fixed the bug so the code would break the while loop if any of them are missing. Then, an empty list "[]" is printed as the output.
+When the input text file contianed a link that misses any of the OpenBracket, ClosedBracket, OpenParenthesis and ClosedParenthesis, IndexOutofBound exception occurred. By implementing if statement that checks whether the four exist or not, we fixed the bug so the code would break the while loop if any of them are missing. Then, an empty list "[]" is printed as the output.
 
 **2nd fix:**
+
 ![image](invalidBug.jpg)
 [input: test-file3](https://github.com/eunkjm/markdown-parse/blob/main/test-file3.md)
 
 ![image](invalidCode.jpg)
 
-Before the fix, the code didn't recognized an invalid format of the url and printed it out in the list.
-We implimented if statement to check if the ClosedBracket and the OpenParentheses is next to each other. If not, the while loop breaks and an empty list "[]" is printed as the output.
+Before the fix, the code didn't recognize an invalid format of the url and printed it out in the list.
+We implimented if statement to check if the ClosedBracket and the OpenParenthesis are next to each other. If not, the while loop breaks and an empty list "[]" is printed as the output.
 
 
 **3rd fix**
@@ -23,4 +24,4 @@ We implimented if statement to check if the ClosedBracket and the OpenParenthese
 ![image](last.jpg)
 [input : test-file4](https://github.com/eunkjm/markdown-parse/blob/main/test-file4.md)
 
-Image and the link has similar format; they both involve OpenBracket, ClosedBracket, OpenParentheses and ClosedParentheses which are what our code checks. As the result, there was a bug where image was not differentiated from the link and printed out in the list as the url. We fixed the bug by implementing if statement that checks the placement of "!". If "!" is found, the the corresponding image is not printed in the list as the output.
+Image and the link has similar format; they both involve OpenBracket, ClosedBracket, OpenParenthesis and ClosedParenthesis which are what our code checks. As the result, there was a bug where image was not differentiated from the link and was printed out in the list as the url. We fixed the bug by implementing if statement that checks the placement of "!". If "!" was found, the corresponding image input is not printed in the list as the output.
