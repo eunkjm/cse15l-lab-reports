@@ -25,4 +25,4 @@ We implimented if statement to check if the ClosedBracket and the OpenParenthesi
 
 ![image](last.jpg)
 
-Image and the link has similar format; they both involve OpenBracket, ClosedBracket, OpenParenthesis and ClosedParenthesis which are what our code checks. As the result, there was a bug where image was not differentiated from the link and was printed out in the list as the url. We fixed the bug by implementing if statement that checks the placement of "!". If "!" was found, the corresponding image input is not printed in the list as the output.
+Image and the link have the similar formats; they both involve OpenBracket, ClosedBracket, OpenParenthesis and ClosedParenthesis which are what our code checks. As the result, there was a bug where image was not differentiated from the link and was printed out in the list as the url. We fixed the bug by implementing if statement that checks the placement of "!". If "!" was found, the corresponding image input is not printed in the list as the output.
