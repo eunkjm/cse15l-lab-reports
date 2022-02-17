@@ -1,7 +1,26 @@
 **1st fix:**
 
-**Last fix**
+![image](indexBug.jpg)
+[input : test-file2](https://github.com/eunkjm/markdown-parse/blob/main/test-file2.md)
 
+![image](indexCode.jpg)
+
+When the input text file contianed a link that misses any of the OpenBracket, ClosedBracket, OpenParentheses and ClosedParentheses, IndexOutofBound exception occurred. By implementing if statement that checks whether the four exist or not, we fixed the bug so the code would break the while loop if any of them are missing. Then, an empty list "[]" is printed as the output.
+
+**2nd fix:**
+![image](invalidBug.jpg)
+[input: test-file3](https://github.com/eunkjm/markdown-parse/blob/main/test-file3.md)
+
+![image](invalidCode.jpg)
+
+Before the fix, the code didn't recognized an invalid format of the url and printed it out in the list.
+We implimented if statement to check if the ClosedBracket and the OpenParentheses is next to each other. If not, the while loop breaks and an empty list "[]" is printed as the output.
+
+
+**3rd fix**
+
+![image](imageBug.jpg)
 ![image](last.jpg)
-![link]() //I realized I don't have history of input of text-files
-Before the fix, the invalid url format wasn't recognised. We fixed the codes so an empty list will be printed when the url input isn't valid.
+[input : test-file4](https://github.com/eunkjm/markdown-parse/blob/main/test-file4.md)
+
+Image and the link has similar format; they both involve OpenBracket, ClosedBracket, OpenParentheses and ClosedParentheses which are what our code checks. As the result, there was a bug where image was not differentiated from the link and printed out in the list as the url. We fixed the bug by implementing if statement that checks the placement of "!". If "!" is found, the the corresponding image is not printed in the list as the output.
