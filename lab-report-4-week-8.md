@@ -1,5 +1,5 @@
-[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)\
-[Reviewed markdown-parse repository](https://github.com/Shree-G/markdown-parse)\
+[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)
+[Reviewed markdown-parse repository](https://github.com/Shree-G/markdown-parse)
 
 # snippet 1
 According to the [CommonMark demo site](https://spec.commonmark.org/dingus/), 
