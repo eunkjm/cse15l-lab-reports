@@ -1,4 +1,4 @@
-[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)\ 
+[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)<\b>
 [Reviewed markdown-parse repository](https://github.com/Shree-G/markdown-parse)
 
 # snippet 1
@@ -8,6 +8,7 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/),
 are considered as links.
 
 **Test implemented in my markdown-parse:**
+
 ![image](snippet1.jpg)
 ![image](failedsnippet1.jpg)
 
@@ -18,6 +19,7 @@ According to the CommonMark demo site,
 are considered as links.
 
 **Test implemented in my markdown-parse:**
+
 ![image](snippet2.jpg)
 ![image](failedsnippet2.jpg)
 
@@ -30,6 +32,7 @@ one line](
 is considered as a link
 
 **Test implemented in my markdown-parse:**
+
 ![image](snippet3.jpg)
 ![image](failedsnippet3.jpg)
 
