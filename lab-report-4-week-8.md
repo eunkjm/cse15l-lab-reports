@@ -3,9 +3,7 @@
 
 # snippet 1
 According to the [CommonMark demo site](https://spec.commonmark.org/dingus/), 
-```[another link](`google.com)`
-   [`cod[e`](google.com)
-   [`code]`](ucsd.edu) ```
+`another link](`google.com)`, [`cod[e`](google.com), [`code]`](ucsd.edu)`
 
 are considered as links.
 
@@ -15,9 +13,7 @@ are considered as links.
 
 # snippet 2
 According to the CommonMark demo site,
-```[nested link](a.com)
-   [a nested parenthesized url](a.com(()))
-   [some escaped \[ brackets \]](example.com) ```
+`[nested link](a.com), [a nested parenthesized url](a.com(())), [some escaped \[ brackets \]](example.com)`
 
 are considered as links.
 
