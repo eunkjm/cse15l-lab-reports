@@ -1,4 +1,4 @@
-[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)<\b>
+[My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)</b>
 [Reviewed markdown-parse repository](https://github.com/Shree-G/markdown-parse)
 
 # snippet 1
