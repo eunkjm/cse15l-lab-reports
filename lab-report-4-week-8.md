@@ -1,5 +1,5 @@
 [My markdown-parse repository](https://github.com/eunkjm/CSE15L-RoseateSpoonbill)
-<br />[Reviewed markdown-parse repository](https://github.com/Shree-G/markdown-parse)
+<br />[Reviewed repository](https://github.com/Shree-G/markdown-parse)
 
 # snippet 1
 According to the [CommonMark demo site](https://spec.commonmark.org/dingus/), 
@@ -11,6 +11,11 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/),
 ![image](snippet1.jpg)
 ![image](failedsnippet1.jpg)
 
+**in the reviewed repository**
+
+![image](snippet1.1.jpg)
+![image](snippet1failure.jpg)
+
 # snippet 2
 According to the CommonMark demo site,
 <br />`[nested link](a.com), [a nested parenthesized url](a.com(())), [some escaped \[ brackets \]](example.com)`
@@ -20,6 +25,11 @@ According to the CommonMark demo site,
 
 ![image](snippet2.jpg)
 ![image](failedsnippet2.jpg)
+
+**in the reviewed repository**
+
+![image](snippet2.1.jpg)
+![image](snippet2failure.jpg)
 
 # snippet 3
 According to the CommonMark demo site, only
@@ -33,5 +43,10 @@ one line](
 
 ![image](snippet3.jpg)
 ![image](failedsnippet3.jpg)
+
+**in the reviewed repository**
+
+![image](snippet3.1.jpg)
+![image](snippet3failure.jpg)
 
 
