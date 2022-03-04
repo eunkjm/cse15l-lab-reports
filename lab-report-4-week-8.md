@@ -6,12 +6,12 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/),
 <br />``another link](`google.com)`, [`cod[e`](google.com), [`code]`](ucsd.edu)``
 <br />are considered as links.
 
-**Test implemented in my markdown-parse :**
+**Test implemented in my markdown-parse:**
 
 ![image](snippet1.jpg)
 ![image](failedsnippet1.jpg)
 
-**in the reviewed repository :**
+**in the reviewed repository:**
 
 ![image](snippet1.1.jpg)
 ![image](snippet1failure.jpg)
@@ -21,12 +21,12 @@ According to the CommonMark demo site,
 <br />`[nested link](a.com), [a nested parenthesized url](a.com(())), [some escaped \[ brackets \]](example.com)`
 <br />are considered as links.
 
-**Test implemented in my markdown-parse :**
+**Test implemented in my markdown-parse:**
 
 ![image](snippet2.jpg)
 ![image](failedsnippet2.jpg)
 
-**in the reviewed repository :**
+**in the reviewed repository:**
 
 ![image](snippet2.1.jpg)
 ![image](snippet2failure.jpg)
@@ -39,12 +39,12 @@ one line](
 )`
 <br />is considered as a link
 
-**Test implemented in my markdown-parse :**
+**Test implemented in my markdown-parse:**
 
 ![image](snippet3.jpg)
 ![image](failedsnippet3.jpg)
 
-**in the reviewed repository :**
+**in the reviewed repository:**
 
 ![image](snippet3.1.jpg)
 ![image](snippet3failure.jpg)
