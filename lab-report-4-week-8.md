@@ -11,7 +11,7 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/),
 ![image](snippet1.jpg)
 ![image](failedsnippet1.jpg)
 
-**in the reviewed repository:**
+**In the reviewed repository:**
 
 ![image](snippet1.1.jpg)
 ![image](snippet1failure.jpg)
@@ -26,7 +26,7 @@ According to the CommonMark demo site,
 ![image](snippet2.jpg)
 ![image](failedsnippet2.jpg)
 
-**in the reviewed repository:**
+**In the reviewed repository:**
 
 ![image](snippet2.1.jpg)
 ![image](snippet2failure.jpg)
@@ -44,7 +44,7 @@ one line](
 ![image](snippet3.jpg)
 ![image](failedsnippet3.jpg)
 
-**in the reviewed repository:**
+**In the reviewed repository:**
 
 ![image](snippet3.1.jpg)
 ![image](snippet3failure.jpg)
