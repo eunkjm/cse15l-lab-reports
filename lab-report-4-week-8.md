@@ -3,7 +3,7 @@
 
 # snippet 1
 According to the [CommonMark demo site](https://spec.commonmark.org/dingus/), 
-<br />``another link](`google.com)`, [`cod[e`](google.com), [`code]`](ucsd.edu)``
+<br />`[another link](`google.com)`, [`cod[e`](google.com), [`code]`](ucsd.edu)``
 <br />are considered as links.
 
 **Test implemented in my markdown-parse:**
