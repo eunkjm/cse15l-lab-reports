@@ -1,1 +1,1 @@
-
+Fist, we saved the url list output into a text file so we could access the list anytime after it was created. Then we used diff to contrast the difference between the url list from the given markdown-pares and the list from our implementation.
