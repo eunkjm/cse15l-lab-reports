@@ -12,7 +12,7 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/),
 ![image](failedsnippet1.jpg)
 
 **code fix**:
-For snippet 1, I think there is a way to make the test to pass with less than 10 lines of code change. It seems like the difference between the valid and invalid links is whether or not the backtick is enclosed within the nextOpenBracket and nextCloseBracket, which my codes failed to recognize. Using the if statement with the indexes, I could check if the backticks are inside of the brackets. If there is additional non-matching brackets inside of the nextOpenBracket and nextCloseBracket, matching pair of backticks need to enclose it. Otherwise, it seems like the number of backticks and whether or not it has a matching pair don't matter as long as they are all enclosed by the nextOpenBracket and nextCloseBracket(else statement).
+<br />For snippet 1, I think there is a way to make the test to pass with small code change. It seems like the difference between the valid and invalid links is whether or not the backtick is enclosed within the nextOpenBracket and nextCloseBracket, which my codes failed to recognize. Using the if statement with the indexes, I could check if the backticks are inside of the brackets. If there is additional non-matching brackets inside of the nextOpenBracket and nextCloseBracket, matching pair of backticks need to enclose it. Otherwise, it seems like the number of backticks and whether or not it has a matching pair don't matter as long as they are all enclosed by the nextOpenBracket and nextCloseBracket(else statement).
 
 **In the reviewed repository:**
 
@@ -30,8 +30,8 @@ According to the CommonMark demo site,
 ![image](failedsnippet2.jpg)
 
 **code fix:**
-For snippet 2, I think it could be fixed with small code change. Similar to the test failure for the last link from snippet 1, it seems like my code failed to recognize a valid link that contains closebrackets inside of the nextOpenBracket and nextCloseBracket: `[some escaped \[ brackets \]](example.com)`. The difference between this link and the link from snippet 1 is that snippet 2's link has a matching pair of close and openbrackets instead of one closebracket. Using the if statement, I could check if there is matching pair of brackets inside and recognize the valid link.
-Also, for the nested parentheses fix, I could add another if statement to check if there is additional closeparentheses so it would be involved in the url list instead of being cut off after the code finds its first closeParen.
+<br />For snippet 2, I think it can be fixed with small code change. Similar to the test failure for the last link from snippet 1, it seems like my code failed to recognize a valid link that contains closebrackets inside of the nextOpenBracket and nextCloseBracket: `[some escaped \[ brackets \]](example.com)`. The difference between this link and the link from snippet 1 is that snippet 2's link has a matching pair of close and openbrackets instead of one closebracket. Using the if statement, I could check if there is matching pair of brackets inside and recognize the valid link.
+Also, for the nested parentheses fix, I could add another if statement to check if there is additional closing parenthesis, so it would be involved in the url list instead of being cut off after the code finds its first closeParen.
 
 **In the reviewed repository:**
 
@@ -50,6 +50,9 @@ one line](
 
 ![image](snippet3.jpg)
 ![image](failedsnippet3.jpg)
+
+**code fix:**
+<br />For snippet 3, I think it can be fixed with a small code change. It seems like my code fails to recognize two seperate invalid links(third and the last) but rather combined them into one url with valid link. This issue can be fixed by checking if there is more than one newline inbetween the openParen, url and closeParen(which results in an invalid link.) The links without the closing parenthesis after more than one newline will also be invalidated with this fix.
 
 **In the reviewed repository:**
 
