@@ -1,3 +1,7 @@
+Using the diff command, I compared and contrasted the two url lists:
+
+![image](diff.jpg)
+
 Since I coudln't figure out how to access an individual file in different directory 'test-files', I used the whole directory to run the MarkdownParse java file.
 The url list output was saved into a results.txt file so I could access the list anytime after it was created. I picked two test files by looking through the results.txt which were 493.md and 494.md.
 
