@@ -14,9 +14,12 @@ According to the [CommonMark demo site](https://spec.commonmark.org/dingus/), th
 The provided markdown-parse had the correct output while my MarkdownParse implementation returned an empty list.
 
 **Bug:**
-<br />I found out that my implementatation returned the empty list as an output because it didn't reach line 40.
-The index of the first OpenBracekt was 0 and the index of "!" was -1 since it wasn't found in the file. One of the conditions for if statement in line 37 specified that the index of "!" shouldn't equal 0 - 1 = -1 which was not met, hence the output was '[]'
-However, the output would still not be correct even if the index bug was fixed, because the 
+
+![image](495Bug.jpg)
+
+I found out that my implementatation returned the empty list as an output because it didn't reach line 40.
+The index of the first OpenBracekt was 0 and the index of "!" was -1 since it wasn't found in the file. One of the conditions for if statement in line 37 specified that the index of "!" shouldn't equal 0 - 1 = -1, hence the output was '[]'
+However, the output would still not be correct even if the index bug was fixed, because after the first close parenthesis is reached, the while loop will break because it can't find another opne Bracket.
 
 
 
