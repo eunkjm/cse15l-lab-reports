@@ -17,9 +17,9 @@ The provided markdown-parse had the correct output while my MarkdownParse implem
 
 ![image](495Bug.jpg)
 
-I found out that my implementatation returned the empty list as an output because it didn't reach line 40.
-The index of the first OpenBracekt was 0 and the index of '!' was -1 since it wasn't found in the file. One of the conditions for if statement in line 37 specified that the index of '!' shouldn't equal 0 - 1 = -1, hence the output was `[]` as the url was not added to the list.
-However, the output would still not be correct even if the if conditions were fixed. (I found this bug by putting a space infront of the first open bracket and making the index of it not 0.) For my current implementation, the while loop will break after the first close parenthesis is reached because next open braket can't be found (line 28) and the output will be: `[foo(and(bar]` There should be a code fix in line 35 to determine if the last charactor of the url is ')', so all the string that comes beforehand can be included in the url list.
+I found out that my implementatation returned the empty list as an output because it didn't reach line 38.
+The index of the first OpenBracekt was 0 and the index of '!' was -1 since it wasn't found in the file. One of the conditions for if statement in line 35 specified that the index of '!' shouldn't equal 0 - 1 = -1, hence the output was `[]` as the url was not added to the list.
+However, the output would still not be correct even if the if conditions were fixed. (I found this bug by putting a space infront of the first open bracket and making the index of it not 0.) For my current implementation, the while loop will break after the first close parenthesis is reached because next open braket can't be found (line 31) and the output will be: `[foo(and(bar]` There should be a code fix in line 35 to determine whether or not the last charactor of the url is ')', so all the string that comes beforehand can be included in the url list.
 
 ## 577.md
 
