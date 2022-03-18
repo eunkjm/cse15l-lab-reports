@@ -34,4 +34,4 @@ This time, my MarkdownParse returned the correct output while the provided markd
 ![image](577Bug.jpg)
 
 The bug of the provided markdown-parse was that it didn't check for the placement of '!' infront of the first open bracket.
-In line 77, the if conditions should be fixed so it also checks whether or not the index of '!' is not equal to -1, so the image url will not be added to the url list.
+In line 77, the if conditions should be fixed so it also checks whether or not the index of '!' does not equal to -1; if it does equal to -1, the image url should not be added to the url list, so the output could be an empty list.
