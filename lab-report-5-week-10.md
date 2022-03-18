@@ -29,7 +29,7 @@ Since the format of the file was an image, the expected out is an empty list, `[
 
 This time, my MarkdownParse returned the correct output while the provided markdown-parse failed to differentiate an image format from a link format.
 
-**Bug**
+**Bug:**
 
 ![image](577Bug.jpg)
 
